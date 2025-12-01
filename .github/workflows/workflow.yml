@@ -11,7 +11,7 @@ jobs:
       - name: Checkout source (coloros, shallow clone)
         uses: actions/checkout@v4
         with:
-          ref: sm8250_t_13.0.0_oppopad
+          ref: oppo/sm8250_t_13.0.0_oppopad
           fetch-depth: 1   # 只拉最新一次提交，加快速度
 
       - name: Install dependencies
