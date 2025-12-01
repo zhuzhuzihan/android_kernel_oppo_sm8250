@@ -49,7 +49,7 @@ jobs:
       - name: Build kernel
         run: |
           mkdir -p out
-          make O=out sagit_defconfig
+          make O=out kona-perf_defconfig
           make O=out -j$(nproc) KCFLAGS=-Wno-error
 
       - name: Upload artifact
